@@ -13,7 +13,7 @@ If you are using `FastGPL`, please cite the above.
 ```bash
 git clone https://github.com/llyang/FastGPL.git
 ```
-To compile and install the library, one needs to have CMake installed, and the following commands have to be executed:
+To compile and install the library, one needs to have `CMake` installed, and the following commands have to be executed:
 ```bash
 cd FastGPL
 mkdir build && cd build
