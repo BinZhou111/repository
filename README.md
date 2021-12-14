@@ -33,7 +33,7 @@ To use `FastGPL`, one simply includes the header file `FastGPL.h`, and invokes t
     cout << FastGPL::G(a, x) << '\n';
 ```
 
-Here, x must be a non-negative real number. The reason is that this allows the program to easily decide which side of a branch cut to take according to the signs of the imaginary parts of the indices. In the G(a, s, x)  version of the function, a is a vector of complex indices, and s is a vector with elements being either +1 or -1, which denote the signs of the imaginary parts of the corresponding indices. If one uses the G(a, x) version of the function, and if the imaginary part of a certain index is zero, the program will automatically choose +1 as the sign. This convention is the same as `GiNaC`. Hence, the last two lines in the above code snippet correspond to G(0.1+0.2i, 0.4-i0; 0.8) and G(0.1+0.2i, 0.4+i0; 0.8), respectively.
+Here, `x` must be a non-negative real number. The reason is that this allows the program to easily decide which side of a branch cut to take according to the signs of the imaginary parts of the indices. In the G(a, s, x)  version of the function, `a` is a vector of complex indices, and `s` is a vector with elements being either +1 or -1, which denote the signs of the imaginary parts of the corresponding indices. If one uses the G(a, x) version of the function, and if the imaginary part of a certain index is zero, the program will automatically choose +1 as the sign. This convention is the same as `GiNaC`. Hence, the last two lines in the above code snippet correspond to G(0.1+0.2i, 0.4-i0; 0.8) and G(0.1+0.2i, 0.4+i0; 0.8), respectively.
 
 As a side effect, `FastGPL` also provides several functions for the evaluation of normal polylogarithms Li<sub>n</sub>(z) up to weight 8 and the Neilsen's generalized polylogarithm S<sub>2,2</sub>(z) for the complex argument z. Furthermore, as elliptic integrals often appear in loop integrals which cannot be represented purely with GPLs, we also provide two functions to evaluate the complete elliptic integrals of the first and the second kinds. The usage of these functions can be seen from the following code snippet:
 ```C++
@@ -44,5 +44,5 @@ As a side effect, `FastGPL` also provides several functions for the evaluation o
     cout << FastGPL::EllipticK(z);
     cout << FastGPL::EllipticE(z);
 ```
-Note that for `PolyLog` and `S22`, s will default to -1 if it's omitted and if the imaginary part of z is zero. This convention is the same as `GiNaC` and `Mathematica`.
+Note that for `PolyLog` and `S22`, `s` will default to -1 if it's omitted and if the imaginary part of z is zero. This convention is the same as `GiNaC` and `Mathematica`.
 
