@@ -1,6 +1,6 @@
 # FastGPL
 
-[![License: LGPL v2.1](https://img.shields.io/badge/License-LGPLv2-blue.svg)](https://github.com/llyang/FastGPL/blob/main/LICENSE)
+[![License: LGPL v2.1](https://img.shields.io/badge/License-LGPLv2.1-blue.svg)](https://github.com/llyang/FastGPL/blob/main/LICENSE)
 
 This is the code for the paper [[arXiv:2112.04122]](https://arxiv.org/abs/2112.04122)
 >  FastGPL: a C++ library for fast evaluation of generalized polylogarithms
